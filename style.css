@@ -157,3 +157,78 @@ video{
 .gallery:hover{
     cursor: pointer;
 }
+
+@media  screen and (min-width:200px) and (max-width:425px) {
+    
+    .action-cont{
+        height: 5.5rem;
+        width: 3rem;
+        /* background-color: lightblue; */
+        position: absolute;
+        top: calc(( 100vh - 5.5rem ) / 2 );
+    
+        right: 1.5rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+    }
+
+    
+    .action-cont>*{
+        width: 100%;
+        height: 5rem;
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .record-btn{
+        
+        background-color: red;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        
+    }
+    
+    .capture-btn{
+        background-color: white;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+    }
+    
+    .material-symbols-outlined{
+        color:white;
+        font-size: 2rem;
+    }
+    
+    .gallery{
+        position: absolute;
+        right: 2rem;
+        bottom: 5rem;
+        z-index: 2;
+    }
+    
+    .filter-cont{
+        position: absolute;
+        top: calc(( 100vh - 10rem ) / 2);
+        left: 1.5rem;
+        height: 10rem;
+        width: 3rem;
+        z-index: 2;
+    }
+    .filter{
+        height: 2.5rem;
+        background-image: url(https://picsum.photos/seed/picsum/200/300);
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-blend-mode: color-burn;
+    }
+}

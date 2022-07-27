@@ -67,3 +67,41 @@ body{
 .delete{
     background-color: red;
 }
+
+@media  screen and (min-width:200px) and (max-width:425px) {
+
+    .back{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        bottom: 3rem;
+        right: 4rem;
+        font-size: small;
+    }    
+    .media-cont{
+        height: 10rem;
+        width: 10rem;
+        border: 5px solid white;
+        background-color: lightgreen;
+        margin: 1rem;
+    }
+    
+    .media{
+        height: calc(100% - 1rem - 1rem);
+    }
+
+
+    .action-btn{
+        height: 1rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
